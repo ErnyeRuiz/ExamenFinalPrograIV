@@ -5,7 +5,7 @@ const routes = require("./routes/index");
 const mongoose  = require('mongoose');
 require ("dotenv").config(); 
 //settings
-app.set('port',process.env.Port || 3000);
+app.set('port',process.env.Port);
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','pug');
 //middlewares
