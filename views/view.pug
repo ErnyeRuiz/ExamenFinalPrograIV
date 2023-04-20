@@ -1,0 +1,29 @@
+doctype html
+head
+    title Ver usuarios
+    link(rel='stylesheet',href='/stylesheets/hojaEstilos.css')
+body 
+    div#contenedor
+        div 
+            div.titulo Bienvenido
+            hr
+            div.pie-form
+                a(href="insert") Registrar usuario nuevo                
+        div#contenedorcentrado
+            h1 Usuarios registrados
+            div#login
+                table
+                    thead
+                        tr
+                            th(scope='col', style="padding:15px;") Nombre
+                            th(scope='col', style="padding:15px;") Apellido
+                            th(scope='col', style="padding:15px;") Telefono                    
+                    tbody
+                        each user in users
+                            tr
+                                th=user.nombre
+                                th=user.apellido
+                                td=user.telefono                        
+                                td(style="padding:15px;")
+                                    a(href=`/viewUser/${user.nombre}` style="margin:3px;") Ver                                                
+        

@@ -1,0 +1,44 @@
+doctype html
+head 
+    title Ver Usuario
+    link(rel='stylesheet',href='/stylesheets/hojaEstilos.css')
+
+body
+    div#contenedor
+        div#contenedorcentrado
+            div#login
+                form#loginform(method='get' action='/view')
+                    div.row
+                        div.col
+                            label(for="usuario") Nombre
+                            input#usuario(type="text", name="nombre", value=`${user.nombre}`, readonly="true")
+
+                            label(for="usuario") Apellido
+                            input#usuario(type="text", name="apellido", value=`${user.apellido}`, readonly="true")
+
+                            label(for="usuario") Telefono
+                            input#usuario(type="text", name="telefono", value=`${user.telefono}`, readonly="true")
+
+                            label(for="usuario") Email
+                            input#usuario(type="text", name="email", value=`${user.email}`, readonly="true")
+
+                            label(for="usuario") Edad
+                            input#usuario(type="text", name="edad", value=`${user.edad}`, readonly="true") 
+                        div.col                            
+
+                            label(for="usuario") Grado de escolaridad
+                            input#usuario(type="text", name="escolaridad", value=`${user.gradoEscolaridad}`, readonly="true")
+
+                            label(for="usuario") Años de experiencia
+                            input#usuario(type="text", name="experiencia", value=`${user.aniosExperiencia}`, readonly="true")
+
+                            label(for="usuario") Especialidad
+                            input#usuario(type="text", name="especialidad", value=`${user.especialidad}`, readonly="true")
+
+                            label(for="usuario") Datos de interes
+                            input#usuario(type="text", name="interes", value=`${user.datosInteres}`, readonly="true")
+
+                            label(for="usuario") Ultima empresa 
+                            input#usuario(type="text", name="empresa", value=`${user.ultimaEmpresa}`, readonly="true")
+                    
+                    button(type="submit", title="Agregar", name="btnAgregar") Regresar

@@ -1,0 +1,44 @@
+doctype html
+head 
+    title Insertar Usuario
+    link(rel='stylesheet',href='/stylesheets/hojaEstilos.css')
+
+body
+    div#contenedor
+        div#contenedorcentrado
+            div#login
+                form#loginform(method='post' action='insert')
+                    div.row
+                        div.col
+                            label(for="usuario") Nombre
+                            input#usuario(type="text", name="nombre", placeholder="", required)
+
+                            label(for="usuario") Apellido
+                            input#usuario(type="text", name="apellido", placeholder="", required)
+
+                            label(for="usuario") Telefono
+                            input#usuario(type="text", name="telefono", placeholder="", required)
+
+                            label(for="usuario") Email
+                            input#usuario(type="text", name="email", placeholder="", required)
+
+                            label(for="usuario") Edad
+                            input#usuario(type="text", name="edad", placeholder="", required) 
+                        div.col                            
+
+                            label(for="usuario") Grado de escolaridad
+                            input#usuario(type="text", name="escolaridad", placeholder="", required)
+
+                            label(for="usuario") Años de experiencia
+                            input#usuario(type="text", name="experiencia", placeholder="", required)
+
+                            label(for="usuario") Especialidad
+                            input#usuario(type="text", name="especialidad", placeholder="", required)
+
+                            label(for="usuario") Datos de interes
+                            input#usuario(type="text", name="interes", placeholder="", required)
+
+                            label(for="usuario") Ultima empresa 
+                            input#usuario(type="text", name="empresa", placeholder="", required)
+                    
+                    button(type="submit", title="Agregar", name="btnAgregar") Agregar                    
